@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<section class="d-flex justify-content-center align-items-center">
+        <div class="card shadow-lg col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4"> 
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+              
+                <h4>  <i class="bi bi-chat-left-quote"></i> &nbsp; Contacto</h4>
+            </div>
+            <div class="mb-1">
+                <form id = "contacto" >
+                    <div class="mb-4 d-flex justify-content-between"> 
+                        <div>
+                            <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder= "ej: Gabriel" required>
+                            <div class="nombre text-danger "></div>
+                        </div>
+                        <div >
+                            <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido" placeholder= "ej: Pacheco" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder= "ej: gpmcheco@mail.com" required>
+                        <div class="correo text-danger"></div>
+                        
+                    </div> 
+                    <div class="mb-4">
+                        <label for="sexo"><i class="bi bi-gender-ambiguous"></i> Sexo: </label>
+                        <input type="radio" class="form-check-input"  name="sexo"  value="masculino" > Masculino
+                        <input type="radio" class="form-check-input" name="sexo"  value="femenino" > Femenino
+                        <div class="sexo text-danger"></div>
+                    </div>  
+                    <div class="mb-4">
+                        <label for="mensaje"> <i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="ej: hola"></textarea>
+                        <div class="mensaje text-danger"></div>
+                    </div> 
+                    
+                    <div class="mb-2">
+                        <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
+                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div> 
+                              
+                </form>
+            </div>
+        </div>
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.95125856671!2d-89.36706812420474!3d13.721400797995198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6321ffdbe7ea81%3A0xd3d7606fa2578aa9!2sTAIMSAL%2C%20S.A.%20DE%20C.V.!5e0!3m2!1ses-419!2ssv!4v1714146676976!5m2!1ses-419!2ssv"
+            width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <script src="index.js"></script>
